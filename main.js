@@ -391,3 +391,26 @@ function datosGrafico() {
         posi[i] = i+1;
     }
 }
+
+function activarRBparada(seleccion) {
+seleccion = parseInt(seleccion.value);
+let botonParada
+    
+    switch (seleccion) {
+        case 1:
+            botonParada = document.getElementById("parada1_1").style.visibility = "visible";
+            break;
+        case 2:
+            botonParada = document.getElementById("parada2_1").style.visibility = "visible";
+            break;
+        case 3:
+        botonParada = document.getElementById("parada3_1").style.visibility = "visible";
+            break;
+        case 4:
+        botonParada = document.getElementById("parada4_1").style.visibility = "visible";
+            break;
+    }
+}
+function hello() {
+    alert('hello');
+}
